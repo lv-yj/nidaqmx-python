@@ -6,41 +6,32 @@ Author       National Instruments
 About
 =====
 
-The **nidaqmx** package contains an API (Application Programming Interface)
-for interacting with the NI-DAQmx driver. The package is implemented in Python.
-The package is implemented as a complex, 
-highly object-oriented wrapper around the NI-DAQmx C API using the 
-`ctypes <https://docs.python.org/2/library/ctypes.html>`_ Python library.
+**nidaqmx** 패키지는 NI-DAQmx 드라이버와 상호 작용하기 위한 API(Application Programming Interface)가 포함되어 있습니다. 
+이 패키지는 Python으로 구현되었습니다.
+이 패키지는 `ctypes <https://docs.python.org/2/library/ctypes.html>`_ Python library를 사용하여 
+NI-DAQmx C API 주변의 복잡하고 고도로 객체 지향적인 래퍼로 구현됩니다 
 
-**nidaqmx** supports all versions of the NI-DAQmx driver that ships with the C
-API. The C API is included in any version of the driver that supports it. The
-**nidaqmx** package does not require installation of the C header files.
+**nidaqmx**는 C API와 함께 제공되는 모든 버전의 NI-DAQmx 드라이버를 지원합니다. 
+C API는 이를 지원하는 모든 버전의 드라이버에 포함되어 있습니다. 
+**nidaqmx** 패키지 는 C 헤더 파일을 설치할 필요가 없습니다.
 
-Some functions in the **nidaqmx** package may be unavailable with earlier 
-versions of the NI-DAQmx driver. Visit the 
-`ni.com/downloads <http://www.ni.com/downloads/>`_ to upgrade your version of 
-NI-DAQmx.
+**nidaqmx** 패키지 의 일부 기능은 이전 버전의 NI-DAQmx 드라이버에서 사용하지 못할 수 있습니다. 
+NI-DAQmx 버전을 업그레이드하려면 `ni.com/downloads <http://www.ni.com/downloads/>`_를 방문하십시오 .
 
-**nidaqmx** supports Windows and Linux operating systems where the NI-DAQmx
-driver is supported. Refer to
-`NI Hardware and Operating System Compatibility <https://www.ni.com/r/hw-support>`_
-for which versions of the driver support your hardware on a given operating
-system.
+**nidaqmx**는 NI-DAQmx 드라이버가 지원되는 Windows 및 Linux 운영 체제를 지원합니다. 
+주어진 운영 체제에서 하드웨어를 지원하는 드라이버 버전에 대해서는 `NI 하드웨어 및 운영 체제 호환성 <https://www.ni.com/r/hw-support>`_을 참조하십시오.
 
-**nidaqmx** supports CPython 3.7+ and PyPy3.
+**nidaqmx**는 CPython 3.7+ 및 PyPy3를 지원합니다.
 
 Installation
 ============
 
-Running **nidaqmx** requires NI-DAQmx to be installed. Visit
-`ni.com/downloads <http://www.ni.com/downloads/>`_ to download the latest
-version of NI-DAQmx. None of the recommended **Additional items** are required
-for **nidaqmx** to function, and they can be removed to minimize installation
-size. It is recommended you continue to install the **NI Certificates** package
-to allow your Operating System to trust NI built binaries, improving your
-software and hardware installation experience.
+**nidaqmx**를 실행하려면 NI-DAQmx를 설치해야 합니다. 
+최신 버전의 NI-DAQmx를 다운로드하려면 `ni.com/downloads <http://www.ni.com/downloads/>`_를 방문하십시오. 
+**권장되는 추가 항목**은 nidaqmx가 작동하는 데 필요 하지 않으며 설치 크기를 최소화하기 위해 제거할 수 있습니다. 
+운영 체제가 NI 빌드 바이너리를 신뢰할 수 있도록 **NI 인증서** 패키지를 계속 설치하여 소프트웨어 및 하드웨어 설치 경험을 개선하는 것이 좋습니다 .
 
-**nidaqmx** can be installed with `pip <http://pypi.python.org/pypi/pip>`_::
+**nidaqmx**는 `pip <http://pypi.python.org/pypi/pip>`_로 설치할 수 있습니다::
 
   $ python -m pip install nidaqmx
 
